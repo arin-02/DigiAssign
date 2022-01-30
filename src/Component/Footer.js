@@ -18,7 +18,7 @@ export default function Footer() {
       </div>
       <div className="textbelow text-center m-auto">
         <p>
-          Rapid learning rapid authoring tools web based training (wbt) informal
+          Rapid Learning rapid authoring tools web based training (wbt) informal
           learning virtual classroom, roi instructional designer big data
         </p>
       </div>
