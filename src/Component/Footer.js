@@ -1,14 +1,16 @@
 import React from "react";
 import t1 from "./t1.jpg";
 import t2 from "./t2.jpg";
-import t3 from "./t3.jpg";
 import t4 from "./t4.jpg";
-import clock from "./clock.png";
-import loc from "./loc.png";
-import call from "./call.png";
+import { IoIosCall } from "react-icons/io";
+import { AiFillClockCircle } from "react-icons/ai";
+import { HiLocationMarker } from "react-icons/hi";
+import { FiCalendar} from 'react-icons/fi'
+
 export default function Footer() {
   return (
     <div>
+    <div className="teacher" data-aos="fade-up" data-aos-duration="1300">
       <div className="Techers text sans-serif font-bold text-4xl text-center my-10">
         <h1>
           Our Awesome <span style={{ color: "#F37335" }}>Teachers</span>
@@ -20,102 +22,168 @@ export default function Footer() {
           learning virtual classroom, roi instructional designer big data
         </p>
       </div>
-      <div className="teachers flex my-10">
-        <div className="teacherone margin mx-8">
-          <img className="rounded-lg " src={t1} alt="image" />
+      <div className="teachers block sm:flex my-10">
+        <div className="teacherone pt-6 md:pt-0 margin mx-8 ">
+          <img className="fimg rounded-lg " src={t1} alt="image" />
           <p className="text-center font-bold my-2 text-xl">Polina Kerston</p>
-          <p className="text-center">English Teacher</p>
+          <p className="text-center font-semibold" style={{color:"#135e9e"}}>English Teacher</p>
         </div>
-        <div className="teachertwo margin mx-8">
-          <img className="rounded-lg h-45 w-45" src={t2} alt="image" />
+        <div className="teachertwo pt-6 md:pt-0 margin mx-8">
+          <img className=" fimg  rounded-lg" src={t2} alt="image" />
+          <p className="text-center font-bold my-2 text-xl" >Faadi Al Rahman</p>
+          <p className="text-center font-semibold" style={{color:"#135e9e"}}>Maths Teacher</p>
+        </div>
+        <div className="teacherthree pt-6 md:pt-0 margin mx-8">
+          <img className="fimg rounded-lg  " src={t2} alt="image" />
           <p className="text-center font-bold my-2 text-xl">Faadi Al Rahman</p>
-          <p className="text-center">Maths Teacher</p>
+          <p className="text-center font-semibold" style={{color:"#135e9e"}}>Arts Teacher</p>
         </div>
-        <div className="teacherthree margin mx-8">
-          <img className="rounded-lg" src={t3} alt="image" />
-          <p className="text-center font-bold my-2 text-xl">Katayama Fumiki</p>
-          <p className="text-center">Arts Teacher</p>
-        </div>
-        <div className="teacherfour margin mx-8">
-          <img className="rounded-lg" src={t4} alt="image" />
+        <div className="teacherfour pt-6 md:pt-0 margin mx-8">
+          <img className="fimg rounded-lg" src={t4} alt="image" />
           <p className="text-center font-bold my-2 text-xl">Chikelu Obasea</p>
-          <p className="text-center">Instructor</p>
+          <p className="text-center font-semibold" style={{color:"#135e9e"}}>Instructor</p>
         </div>
       </div>
-      <div className="form bg-orange-500 flex my-15 rounded-3xl items-center m-auto w-2/3">
+</div>
+
+
+      <div className="footerform bg-orange-500 block sm:flex justify-center my-28 rounded-3xl items-center m-auto w-full ">
         <div className="my-10 text-white mx-10">
-          <h1 className="text-3xl font-bold">Join Us</h1>
-          <h1 className="text-3xl font-bold">and stay tuned!</h1>
-          <p className="my-6 margin-auto font-medium">
+          <h1 className="text-4xl font-medium md:font-bold pt-5 sm:pt-0">Join Us</h1>
+          <h1 className="text-4xl font-medium md:font-bold">and stay tuned!</h1>
+          <p className="my-6 md:text-xl text-normal  margin-auto font-medium ">
             Curation active learning ecosystem learning content management
             system lxd lxp rapid learning
           </p>
         </div>
-        <div className="info block my-10">
-          <div className="entry flex">
-            <input className="rounded-lg h-12"></input>
-
-            <input className="mx-5 rounded-lg"></input>
+        <div className="info block my-10 mx-10">
+          <div className="entry block sm:flex">
+          <div className="1">
+            <input className="rounded-xl w-full sm:w-32 md:w-full mr-5 h-12" placeholder="  Your Name"></input>
+            </div>
+            <div className="2 mt-5 sm:mt-0">
+            <input className="sm:mx-2 sm:w-32 rounded-xl w-full mr-5  h-12" placeholder="  Your Email"></input>
+            </div>
           </div>
-          <div className="my-8">
-            <input className="rounded-lg h-24 w-96"></input>
+          <div className="my-8 ">
+            <input className="rounded-xl h-24 w-full sm:w-64 md:w-96" placeholder="   Message"></input>
           </div>
           <div>
-            <button className="bg-blue-700 rounded-lg w-40 h-12 text-white font-medium">Send a message</button>
+            <input type="button" className="bg-blue-700 rounded-xl w-40 h-12 text-white font-medium mb-5 sm:mb-0" value="Send a message" /> 
           </div>
         </div>
       </div>
-      <div className="footer flex my-28">
+
+
+
+
+
+      <div className="footer flex my-28 justify-center">
         <div className="Contact Us font-bold">
           <h1 className="text-xl">Contact Us</h1>
           <div className="callus flex gap-x-4 my-5">
-            <div className="callicon w-6 mt-2">
-              <img className="mx-1"src={call} alt="image" />
-            </div>
-            <div className="calliconright mx-2">
-              <div className="calltext">CALL US</div>
-              <div className="callnumber font-light text-base">
-                +91 8822747438
-              </div>
-            </div>
-          </div>
-          <div className="business flex gap-x-4">
-            <div className="busicon w-8 ">
-              <img src={clock} alt="image" />
-            </div>
-            <div className="busiconright">
-              <div className="bustext">Business Hours</div>
-              <div className="busnum  font-light text-lg">MON-FRI 8AM-5PM</div>
-            </div>
-          </div>
-          <div className="location flex  gap-x-4 my-4">
-            <div className="locicon w-8 mt-2">
-              <img src={loc} alt="image" />
-            </div>
-            <div className="lociconright">
-              <div className="loctext">Location</div>
-              <div className="locnum  font-light text-base">
-                Sec-17 , Chandigarh
-              </div>
-            </div>
-          </div>
+            
+            
+      <div className="callicon w-6 mt-2">
+      <IoIosCall className='text-4xl pr-1' style={{color:"#ff5707"}}/>
+      </div>
+      <div className="calliconright">
+        <div className="calltext">
+        CALL US
         </div>
-        <div className="Quicklinks margin mx-10 ">
+        <div style={{color:"#54595F"}} className="callnumber font-normal text-base">
+        +91 8822747438
+        </div>
+      </div>
+          </div>
+
+
+
+          <div className="business flex gap-x-4 my-5">
+      <div className="busicon w-8 "  >
+      
+      <AiFillClockCircle style={{color:"#ff5707"}} className=' text-4xl mt-2 rounded-full mr-4 '/>
+      </div>
+      <div className="busiconright">
+        <div className="bustext">
+        Business Hours
+        </div>
+        <div style={{color:"#54595F"}} className="busnum  font-normal text-base">
+        MON-FRI  8AM-5PM
+        </div>
+      </div>
+      </div>
+
+
+
+      <div className="location flex gap-x-4 my-5">
+
+<div className="locicon w-8 mt-2">
+<HiLocationMarker style={{color:"#ff5707"}} className='text-4xl'/>
+</div>
+<div className="lociconright">
+  <div className="loctext">
+  Location
+  </div>
+  <div style={{color:"#54595F"}} className="locnum  font-normal text-base">
+  Sec-17,Chandigarh
+  </div>
+</div>
+
+
+</div>
+
+        </div>
+        <div className="Quicklinks margin mx-10 lg:mx-8 w-52  ">
           <div>
             <h2 className="text-xl font-bold">Quick Links</h2>
-            <ul className="text-blue-500">
-              <li className="my-2 mt-6">About US</li>
-              <li className="my-2">Our Classes</li>
-              <li className="my-2">School Teachers</li>
-              <li className="my-2">Recent Events</li>
-              <li className="my-2">Our News</li>
+            <ul className="links font-medium mt-10" style={{color:"#135e9e"}}>
+              <li className=" ll my-2 mt-6">
+              <a href="">- About US</a>
+             
+              </li>
+              <li className="ll my-2"><a href="">- Our Classes</a></li>
+              <li className="ll my-2"><a href="">-  Teachers</a></li>
+              <li className="ll my-2"><a href="">- Recent Events</a></li>
+              <li className="ll my-2"><a href="">- Our News</a></li>
             </ul>
           </div>
         </div>
-        <div className="twotags">
-          <div></div>
-          <div></div>
+
+
+        <div className="alltags hidden lg:block">
+        <div className="tags1 flex gap-x-4">
+          <div className="im1 w-28 grid content-center">
+            <img className="rounded-lg" src="https://shelly.merku.love/wp-content/uploads/2020/11/blog-large2.png" alt="" />
+          </div>
+          <div className="imright block">
+            <div className="top font-semibold ">
+            This Long-Awaited Technology May Finally Change the World
+            </div>
+            <div className="bottom flex mt-2 align-items-center">
+            <FiCalendar className='  text-blue-900 p-1 text-3xl rounded-full mr-2' style={{color:"#ff5707"}}/>
+                        <p className='text-sm grid content-center font-medium' style={{color:"#54595F"}}>November 28,2022</p>
+            </div>
+          </div>
         </div>
+
+        <div className="tags2 mt-10  flex gap-x-4">
+          <div className="im2 w-28 grid content-center">
+            <img className="rounded-lg" src="https://shelly.merku.love/wp-content/uploads/2020/11/blog-large2.png" alt="" />
+          </div>
+          <div className="imright block">
+            <div className="top font-semibold">
+            The digital revolution in higher education
+            </div>
+            <div className="bottom flex mt-2 align-items-center">
+            <FiCalendar className='  text-blue-900 p-1 text-3xl rounded-full mr-2' style={{color:"#ff5707"}}/>
+                        <p className='text-sm grid content-center font-medium' style={{color:"#54595F"}}>November 28,2022</p>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
       </div>
     </div>
   );

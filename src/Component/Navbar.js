@@ -1,31 +1,32 @@
 import React from 'react';
 import projectimg from './projectimg.png'
+import { IoIosCall } from "react-icons/io";
+import { AiFillClockCircle } from "react-icons/ai";
+import { HiLocationMarker } from "react-icons/hi";
 
-import {ImLocation} from 'react-icons/im'
-import {FiClock,FiPhoneCall} from 'react-icons/fi'
 
 function Navbar() {
   return <div>
-  <div className="start flex  mt-12 font-medium" style={{gap:"30%"}}>
-  <div className="left text-xl flex">
-      <div className="imgg w-16">
+  <div className="start flex  mt-12 font-medium gap-x-2 lg:gap-x-10 xl:gap-x-52" >
+  <div className="lefty pl-32 sm:pl-80 md:pl-0 text-xl flex  md:hidden lg:flex">
+      <div className="imgg w-16 ">
       <img src={projectimg} alt="image" />
       </div>
-      <div className="schooltext" style={{color:"#ff5707"}}>
+      <div className="schooltext  " style={{color:"#ff5707"}}>
         SCHOOL
       </div>
       </div>
-      <div className="right flex gap-x-20 text-lg" style={{color:"#54595F"}}>
+      <div className="right hidden md:flex gap-x-6 xl:gap-x-16 text-lg" style={{color:"#54595F"}}>
       <div className="callus flex gap-x-4">
       <div className="callicon w-6 mt-2">
       
-      <FiPhoneCall className='text-4xl pr-1' style={{color:"#ff5707"}}/>
+      <IoIosCall className='text-4xl pr-1' style={{color:"#ff5707"}}/>
       </div>
       <div className="calliconright">
         <div className="calltext">
         CALL US
         </div>
-        <div className="callnumber font-light text-lg">
+        <div className="callnumber font-normal text-base">
         +91 8822747438
         </div>
       </div>
@@ -35,13 +36,13 @@ function Navbar() {
       <div className="business flex gap-x-4">
       <div className="busicon w-8 "  >
       
-      <FiClock style={{color:"#ff5707"}} className=' text-4xl mt-2 rounded-full mr-4 '/>
+      <AiFillClockCircle style={{color:"#ff5707"}} className=' text-4xl mt-2 rounded-full mr-4 '/>
       </div>
       <div className="busiconright">
         <div className="bustext">
         Business Hours
         </div>
-        <div className="busnum  font-light text-lg">
+        <div className="busnum  font-normal text-base">
         MON-FRI  8AM-5PM
         </div>
       </div>
@@ -51,14 +52,14 @@ function Navbar() {
       <div className="location flex  gap-x-4">
 
       <div className="locicon w-8 mt-2">
-      <ImLocation style={{color:"#ff5707"}} className='text-4xl'/>
+      <HiLocationMarker style={{color:"#ff5707"}} className='text-4xl'/>
       </div>
       <div className="lociconright">
         <div className="loctext">
         Location
         </div>
-        <div className="locnum  font-light text-base">
-        Sec-17 , Chandigarh
+        <div className="locnum  font-normal text-base">
+        Sec-17,Chandigarh
         </div>
       </div>
 
@@ -70,7 +71,7 @@ function Navbar() {
   </div>
   <br/>
   
-  <hr/>
+  <hr style={{color:"blue"}}/>
 
 </div>;
 }
