@@ -7,21 +7,21 @@ import UpcommingEvents from './Component/UpcommingEvents';
 import Content2 from './Component/Content2';
 import Footer from './Component/Footer';
 import Ourclasses from './Component/Ourclasses';
-
+import bgg from './bgg.jpg'
 
 function App() {
   return (
-    <>
-    <div className='lg:mx-40 mx-2'>
+    
+    <div className='lg:px-40 mx-2 bg-cover bg-no-repeat ' style={{backgroundImage:`url(${bgg})`}}>
       <Navbar/>
       <Content/>
       <Content2/>
       <Welcome/>
       <UpcommingEvents/>
-      {/* <Ourclasses/> */}
+      <Ourclasses/>
       <Footer/>
     </div>
-      </>
+      
     
   );
 }

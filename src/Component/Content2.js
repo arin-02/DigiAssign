@@ -5,7 +5,7 @@ function Content2() {
   <div className='all grid grid-cols-2'>
         <div className="lefty block ">
         <div className="text-7xl animate__animated animate__zoomInDown font-semibold mt-8">
-        <span className='z-30  '>THE SMARTER WAY TO LEARN </span> 
+        <span className='z-30' >THE SMARTER WAY TO LEARN </span> 
         <span style={{color:"#F37335"}}> ANYTHING</span>
         </div>
         <div className="texts animate__animated animate__flash text-lg mt-8 border-l-4" style={{borderColor:"#F37335"}}>
@@ -14,9 +14,9 @@ function Content2() {
         </div>
         <div className="searchbar pl-44 md:pl-0">
        
-    <div class="container mt-10 flex justify-center items-center sm:px-2 lg:px-2">
-        <div class="relative "> <input type="text" class="h-14 w-72 sm:w-96 pr-4 pl-5 border border-sky-500 rounded-full  z-0 focus:shadow focus:outline-none" placeholder="Search Classes..."/>
-            <div class="absolute top-4 right-3"> <i class="fas fa-search text-sky-700 z-20 hover:text-gray-500"></i> </div>
+    <div className="container mt-10 flex justify-center items-center sm:px-2 lg:px-2">
+        <div className="relative "> <input type="text" className="h-14 w-72 sm:w-96 pr-4 pl-5 border border-sky-500 rounded-full  z-0 focus:shadow focus:outline-none" placeholder="Search Classes..."/>
+            <div className="absolute top-4 right-3"> <i className="fas fa-search text-sky-700 z-20 hover:text-gray-500"></i> </div>
         </div>
     </div>
 

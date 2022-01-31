@@ -9,16 +9,16 @@ import { FiCalendar} from 'react-icons/fi'
 
 export default function Footer() {
   return (
-    <div>
-    <div className="teacher" data-aos="fade-up" data-aos-duration="1300">
-      <div className="Techers text sans-serif font-bold text-4xl text-center my-10">
+    <div id="allteachers" >
+    <div className="teacher" data-aos="zoom-in" data-aos-duration="1000">
+      <div className="Techers text sans-serif font-bold text-4xl text-center my-5 ">
         <h1>
           Our Awesome <span style={{ color: "#F37335" }}>Teachers</span>
         </h1>
       </div>
       <div className="textbelow text-center m-auto">
         <p>
-          Rapid Learning rapid authoring tools web based training (wbt) informal
+          Rapid learning rapid authoring tools web based training (wbt) informal
           learning virtual classroom, roi instructional designer big data
         </p>
       </div>
@@ -56,17 +56,17 @@ export default function Footer() {
             system lxd lxp rapid learning
           </p>
         </div>
-        <div className="info block my-10 mx-10">
+        <div className="info block my-10 mx-8">
           <div className="entry block sm:flex">
-          <div className="1">
-            <input className="rounded-xl w-full sm:w-32 md:w-full mr-5 h-12" placeholder="  Your Name"></input>
+          <div className="1 grid place-items-center ">
+            <input className="sm:mx-2 sm:w-32 rounded-xl w-full ml-4 mt-3 md:w-full mr-5  h-12" placeholder="  Your Name"></input>
             </div>
-            <div className="2 mt-5 sm:mt-0">
-            <input className="sm:mx-2 sm:w-32 rounded-xl w-full mr-5  h-12" placeholder="  Your Email"></input>
+            <div className="2  grid  place-items-center  ml-3 sm:mt-0 ">
+            <input className="sm:mx-2 sm:w-32 rounded-xl w-full mt-3 md:w-full mr-5  h-12" placeholder="  Your Email"></input>
             </div>
           </div>
-          <div className="my-8 ">
-            <input className="rounded-xl h-24 w-full sm:w-64 md:w-96" placeholder="   Message"></input>
+          <div className="my-8 grid  place-items-center">
+            <input className="rounded-xl h-24 w-full sm:w-64 md:w-96 " placeholder="   Message"></input>
           </div>
           <div>
             <input type="button" className="bg-blue-700 rounded-xl w-40 h-12 text-white font-medium mb-5 sm:mb-0" value="Send a message" /> 

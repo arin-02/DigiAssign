@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .welcome-card  {
     box-shadow: 0 0 1px 1px #c9e2f8;
     transition: box-shadow 400ms;
@@ -9,11 +10,4 @@
 
 .welcome-card:hover {
     box-shadow: 0 0 2px 3px #c9e2f8;
-}
-.ca{
-    box-shadow: 0 0 2px 2px #c9e2f8;
-    transition: box-shadow 400ms;
-}
-.ca:hover{
-    box-shadow: 0 0 4.5px 4.5px #c9e2f8;
 }
