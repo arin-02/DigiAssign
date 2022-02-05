@@ -1,50 +1,15 @@
 import React from "react";
-import t1 from "./t1.jpg";
-import t2 from "./t2.jpg";
-import t4 from "./t4.jpg";
 import { IoIosCall } from "react-icons/io";
 import { AiFillClockCircle } from "react-icons/ai";
 import { HiLocationMarker } from "react-icons/hi";
 import { FiCalendar} from 'react-icons/fi'
+import {Link as Lnk} from 'react-router-dom'
+
 
 export default function Footer() {
   return (
-    <div id="allteachers" >
-    <div className="teacher" data-aos="zoom-in" data-aos-duration="1000">
-      <div className="Techers text sans-serif font-bold text-4xl text-center my-5 ">
-        <h1>
-          Our Awesome <span style={{ color: "#F37335" }}>Teachers</span>
-        </h1>
-      </div>
-      <div className="textbelow text-center m-auto">
-        <p>
-          Rapid learning rapid authoring tools web based training (wbt) informal
-          learning virtual classroom, roi instructional designer big data
-        </p>
-      </div>
-      <div className="teachers block sm:flex my-10">
-        <div className="teacherone pt-6 md:pt-0 margin mx-8 ">
-          <img className="fimg rounded-lg " src={t1} alt="image" />
-          <p className="text-center font-bold my-2 text-xl">Polina Kerston</p>
-          <p className="text-center font-semibold" style={{color:"#135e9e"}}>English Teacher</p>
-        </div>
-        <div className="teachertwo pt-6 md:pt-0 margin mx-8">
-          <img className=" fimg  rounded-lg" src={t2} alt="image" />
-          <p className="text-center font-bold my-2 text-xl" >Faadi Al Rahman</p>
-          <p className="text-center font-semibold" style={{color:"#135e9e"}}>Maths Teacher</p>
-        </div>
-        <div className="teacherthree pt-6 md:pt-0 margin mx-8">
-          <img className="fimg rounded-lg  " src={t2} alt="image" />
-          <p className="text-center font-bold my-2 text-xl">Faadi Al Rahman</p>
-          <p className="text-center font-semibold" style={{color:"#135e9e"}}>Arts Teacher</p>
-        </div>
-        <div className="teacherfour pt-6 md:pt-0 margin mx-8">
-          <img className="fimg rounded-lg" src={t4} alt="image" />
-          <p className="text-center font-bold my-2 text-xl">Chikelu Obasea</p>
-          <p className="text-center font-semibold" style={{color:"#135e9e"}}>Instructor</p>
-        </div>
-      </div>
-</div>
+    <div id="allteachers" className="mt-20 pb-1" >
+    
 
 
       <div className="footerform bg-orange-500 block sm:flex justify-center my-28 rounded-3xl items-center m-auto w-full ">
@@ -134,18 +99,17 @@ export default function Footer() {
 </div>
 
         </div>
-        <div className="Quicklinks margin mx-10 lg:mx-8 w-52  ">
+        <div className="Quicklinks margin  lg:mx-8 w-52 mx-6 ">
           <div>
             <h2 className="text-xl font-bold">Quick Links</h2>
-            <ul className="links font-medium mt-10" style={{color:"#135e9e"}}>
-              <li className=" ll my-2 mt-6">
-              <a href="">- About US</a>
-             
-              </li>
-              <li className="ll my-2"><a href="">- Our Classes</a></li>
-              <li className="ll my-2"><a href="">-  Teachers</a></li>
-              <li className="ll my-2"><a href="">- Recent Events</a></li>
-              <li className="ll my-2"><a href="">- Our News</a></li>
+            <ul className="links font-medium mt-10 w-28" style={{color:"#135e9e"}}>
+            <Lnk to={'/'}><li className=" ll my-2 mt-6 w-28">
+              <a href="">-Home</a>
+              </li> </Lnk>
+              <Lnk to={'/aboutus'}><li className="ll my-2"><a href="">-About</a></li></Lnk>
+              <Lnk to={'/classes'}><li className="ll my-2"><a href="">-Classes</a></li></Lnk>
+              <Lnk to={'/teachers'}><li className="ll my-2"><a href="">-Teacher</a></li></Lnk>
+              <Lnk to={'/contacts'}><li className="ll my-2"><a href="">-Contact</a></li></Lnk>
             </ul>
           </div>
         </div>

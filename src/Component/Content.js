@@ -3,24 +3,31 @@ import { TiSocialLinkedinCircular,TiSocialTwitterCircular } from "react-icons/ti
 import { RiFacebookCircleLine } from "react-icons/ri";
 import { ImCross } from "react-icons/im";
 import {Link} from 'react-scroll'
-
+import {Link as Lnk} from 'react-router-dom';
 
 export default function Content() {
 
   return (
   <div className="flex justify-between mt-4"> 
         <div className="first flex text-xl font-semibold">
-          <ul className="  decoration-none hidden lg:flex gap-x-4 lg:gap-x-6" style={{color:"#135e9e"}}>
-                <li className="cursor-pointer hover:underline hover:decoration-red-700">HOME</li>
+          <ul className=" contenthead decoration-none hidden lg:flex gap-x-4 lg:gap-x-6" style={{color:"#135e9e"}}>
+                <Lnk to={'/'}><li className="content1 cursor-pointer hover:underline ">HOME</li>
+                </Lnk>
                 
-                <li className="cursor-pointer hover:underline hover:decoration-red-700">
+                <Lnk to={'/aboutus'}> <li className="content1 cursor-pointer hover:underline ">ABOUT</li>
+                </Lnk>
+
+                <Lnk to={'/classes'}><li className="content1 cursor-pointer hover:underline ">
                 CLASSES
 
                 </li>
-                <li className="cursor-pointer hover:underline hover:decoration-red-700" ><Link className="cursor-pointer" to="allteachers" smooth={true} duration={700}> TEACHERS</Link></li>
-                <li className="cursor-pointer hover:underline hover:decoration-red-700">EVENTS</li>
+                </Lnk>
+                <Lnk to={'/teachers'}><li className="content1 cursor-pointer hover:underline " > TEACHERS</li>
+                </Lnk>
                 
-                <li className="cursor-pointer hover:underline hover:decoration-red-700">CONTACTS</li>
+                
+                <Lnk to={'/contacts'}><li className="content1 cursor-pointer hover:underline ">CONTACTS</li>
+                </Lnk>
             </ul>
         </div>
    
@@ -53,7 +60,8 @@ export default function Content() {
     <hr/>
     </div>
     <ul className="font-medium" style={{color:"#ff5707"}}>
-      <li className=" mt-3 text-2xl cursor-pointer">Home</li>
+      <Lnk to={'/'}><li className=" mt-3 text-2xl cursor-pointer">Home</li></Lnk>
+      <Lnk to={'/aboutus'}><li className=" mt-3 text-2xl cursor-pointer">About-Us</li></Lnk>
       <li className="mt-3">
       <div className="dropdown mt-3">
       <button className="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" style={{backgroundColor:"#ff5707"}}
@@ -61,15 +69,15 @@ export default function Content() {
         Dropdown button
       </button>
       <ul className="dropdown-menu " aria-labelledby="dropdownMenuButton">
-        <li><a className="dropdown-item text-gray-700 text-lg font-semibold" href="#">9th Class</a></li>
-        <li><a className="dropdown-item text-gray-700 text-lg font-semibold" href="#">10th Class</a></li>
-        <li><a className="dropdown-item text-gray-700 text-lg font-semibold" href="#">12th Class</a></li>
+        <Lnk to={'/classes'}><li><a className="dropdown-item text-gray-700 text-lg font-semibold" href="#">9th Class</a></li></Lnk>
+        <Lnk to={'/classes'}><li><a className="dropdown-item text-gray-700 text-lg font-semibold" href="#">10th Class</a></li></Lnk>
+        <Lnk to={'/classes'}><li><a className="dropdown-item text-gray-700 text-lg font-semibold" href="#">12th Class</a></li></Lnk>
       </ul>
     </div>
       </li>
-      <li className="mt-3 text-2xl cursor-pointer">Teachers</li>
-      <li className="mt-3 text-2xl cursor-pointer">Events</li>
-      <li className="mt-3 text-2xl cursor-pointer">Contacts</li>
+      <Lnk to={'/teachers'}><li className="mt-3 text-2xl cursor-pointer">Teachers</li></Lnk>
+      
+      <Lnk to={'/contacts'}><li className="mt-3 text-2xl cursor-pointer">Contacts</li></Lnk>
     </ul>
     
   </div>

@@ -25,3 +25,22 @@
   width: 2rem;
     transition: all .4s ease-in-out;
 }
+.content1:hover{
+  text-decoration-color: #f37335;
+}
+.divrighttop{
+ width: 100%;
+}
+@media screen and (min-width:1024px) {
+  .divrighttop{
+    width: 250%;
+   }
+}
+.divleftdown{
+ width: 100%;
+}
+@media screen and (min-width:1024px) {
+  .divleftdown{
+    width: 250%;
+   }
+}
