@@ -12,7 +12,7 @@ function Navbar() {
       <div className="imgg w-16 ">
       <img src={projectimg} alt="image" />
       </div>
-      <div className="schooltext  " style={{color:"#ff5707"}}>
+      <div className="schooltext grid place-content-center " style={{color:"#ff5707"}}>
         SCHOOL
       </div>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import abimg from './abimg.jpg'
 import { BsFillPenFill } from "react-icons/bs";
 import { GiBookshelf } from "react-icons/gi";
 function Aboutus() {
@@ -15,7 +16,7 @@ function Aboutus() {
           </div>
 
 
-          <div className="allinside gap-x-8 block lg:flex pt-32">
+          <div className="allinside gap-x-20 block lg:flex pt-32">
 
          
           <div className="divleft">
@@ -46,9 +47,9 @@ function Aboutus() {
         </div>
 
           </div>
-          <div className="divrighttop block hidden lg:grid  lg:place-content-center" >
+          <div className="divrighttop  block hidden lg:grid  lg:place-content-center" >
 
-          <img className='z-20  rounded-full' src="	https://shelly.merku.love/wp-content/uploads/2021/06/gallery-15.jpg"  alt="" />
+          <img style={{height:"145%"}} className='z-20  rounded-full' src={abimg}  alt="" />
           {/* <div className="img1 z-30  grid place-content-center  ">
             <img style={{marginLeft:"-2%"}} className='absolute bottom-8 rounded-full w-20' src="	https://shelly.merku.love/wp-content/uploads/2021/06/gallery-14.jpg
           " alt="" />
@@ -62,7 +63,7 @@ function Aboutus() {
 
 
 
-          <div className="allinside2 pt-36 gap-x-8 block lg:flex">
+          <div className="allinside2 pt-36 gap-x-16 block lg:flex">
 
           <div className="divleftdown block grid place-content-center   " >
 
