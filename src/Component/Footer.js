@@ -4,7 +4,8 @@ import { AiFillClockCircle } from "react-icons/ai";
 import { HiLocationMarker } from "react-icons/hi";
 import { FiCalendar} from 'react-icons/fi'
 import {Link as Lnk} from 'react-router-dom'
-
+import { TiSocialLinkedinCircular,TiSocialTwitterCircular } from "react-icons/ti";
+import { RiFacebookCircleLine } from "react-icons/ri";
 
 export default function Footer() {
   return (
@@ -14,24 +15,25 @@ export default function Footer() {
 
       <div className="footerform bg-orange-500 block sm:flex justify-center my-28 rounded-3xl items-center m-auto w-full ">
         <div className="my-10 text-white mx-10">
-          <h1 className="text-4xl font-medium md:font-bold pt-5 sm:pt-0">Join Us</h1>
-          <h1 className="text-4xl font-medium md:font-bold">and stay tuned!</h1>
-          <p className="my-6 md:text-xl text-normal  margin-auto font-medium ">
+          <h1 className="text-2xl font-medium md:font-bold pt-5 sm:pt-0">Join Us</h1>
+          <h1 className="text-2xl font-medium md:font-bold">and stay tuned!</h1>
+          <p className="my-6 md:text-xl text-sm  margin-auto font-medium ">
             Curation active learning ecosystem learning content management
             system lxd lxp rapid learning
           </p>
         </div>
-        <div className="info block my-10 mx-8">
+        <div className="info block my-2 sm:my-10 mx-8">
           <div className="entry block sm:flex">
           <div className="1 grid place-items-center ">
             <input className="sm:mx-2 sm:w-32 rounded-xl w-full ml-4 mt-3 md:w-full mr-5  h-12" placeholder="  Your Name"></input>
             </div>
-            <div className="2  grid  place-items-center  ml-3 sm:mt-0 ">
-            <input className="sm:mx-2 sm:w-32 rounded-xl w-full mt-3 md:w-full mr-5  h-12" placeholder="  Your Email"></input>
+          <div className="1 grid place-items-center sm:ml-2">
+            <input className="sm:mx-2 sm:w-32 rounded-xl w-full ml-4 mt-3 md:w-full mr-5  h-12" placeholder="  Your Email"></input>
             </div>
+            
           </div>
           <div className="my-8 grid  place-items-center">
-            <input className="rounded-xl h-24 w-full sm:w-64 md:w-96 " placeholder="   Message"></input>
+            <input className="rounded-xl h-24 w-full  md:w-96 " placeholder="   Message"></input>
           </div>
           <div>
             <input type="button" className="bg-blue-700 rounded-xl w-40 h-12 text-white font-medium mb-5 sm:mb-0" value="Send a message" /> 
@@ -39,11 +41,15 @@ export default function Footer() {
         </div>
       </div>
 
+    <br/>
+    <br/>
+   
+    <hr style={{color:"blue"}}/>
+    
+  
 
 
-
-
-      <div className="footer flex my-28 justify-center">
+      <div className="footer flex my-10 justify-center">
         <div className="Contact Us font-bold">
           <h1 className="text-xl">Contact Us</h1>
           <div className="callus flex gap-x-4 my-5">
@@ -149,6 +155,28 @@ export default function Footer() {
 
 
       </div>
+      
+      <hr style={{color:"blue"}}/>
+      <br/>
+      <div className="cont flex justify-between">
+        <div className="l text-sm font-normal">
+        © Copyrights 2021 Shelly All rights reserved
+        </div>
+         <div className="ri  flex  text-xl sm:text-4xl sm:gap-x-8">
+
+        <div className="one w-8" >
+        
+        <TiSocialLinkedinCircular className=" font-base hover:scale-125" style={{color:"#F37335"}}/>
+        </div>
+        <div className="two w-8">
+        <RiFacebookCircleLine className=" font-base hover:scale-125" style={{color:"#F37335"}} />
+        </div>
+        <div className="three w-8">
+        <TiSocialTwitterCircular className=" font-base hover:scale-125" style={{color:"#F37335"}}/>
+        </div>
+        </div>
+      </div>
+<br/>
     </div>
   );
 }

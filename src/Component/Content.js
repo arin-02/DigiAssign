@@ -64,9 +64,9 @@ export default function Content() {
       <Lnk to={'/aboutus'}><li className=" mt-3 text-2xl cursor-pointer">About-Us</li></Lnk>
       <li className="mt-3">
       <div className="dropdown mt-3">
-      <button className="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" style={{backgroundColor:"#ff5707"}}
+      <button className="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" style={{backgroundColor:"white",color:"#ff5707"}} 
         data-mdb-toggle="dropdown">
-        Dropdown button
+        CLASSES
       </button>
       <ul className="dropdown-menu " aria-labelledby="dropdownMenuButton">
         <Lnk to={'/classes'}><li><a className="dropdown-item text-gray-700 text-lg font-semibold" href="#">9th Class</a></li></Lnk>

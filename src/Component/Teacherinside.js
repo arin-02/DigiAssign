@@ -11,7 +11,7 @@ function Teacherinside() {
                 <li className='list-disc'>Teachers Us</li>
             </ul>
           </div>
-          <div className="heading text-5xl font-bold my-16">
+          <div className="heading text-5xl font-bold my-8">
           TEACHERS
           </div>
           </div>

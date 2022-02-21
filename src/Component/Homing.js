@@ -11,7 +11,8 @@ function Homing() {
   <Welcome />
   <UpcommingEvents />
   <Ourclasses />
-  <Abovefooter /></div>;
+  <Abovefooter />
+  </div>;
 }
 
 export default Homing;

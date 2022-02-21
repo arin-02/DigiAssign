@@ -15,7 +15,7 @@ function Classesinside() {
     </div>
     </div>
 
-    <div className="cardsmany grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 py-28">
+    <div className="cardsmany grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 ">
     
    <Cardsingle num="1"/>
    <Cardsingle num="2"/>

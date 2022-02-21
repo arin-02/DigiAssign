@@ -16,7 +16,7 @@ function Aboutus() {
           </div>
 
 
-          <div className="allinside gap-x-20 block lg:flex pt-32">
+          <div className="allinside gap-x-20 block lg:flex ">
 
          
           <div className="divleft">
